@@ -1,0 +1,24 @@
+# The supplied USA ROM and the bundled Ryu versus Guile state.
+rom = "roms/Street_Fighter_II_Special_Champion_Edition_USA.md"
+model = "jev-1.13.0"
+coaching = true
+fps = 60.0
+requests_per_second = 4.0
+# Session limits cover all rounds and rematches. Space pauses immediately.
+duration = 300.0
+max_requests = 1200
+continue_rounds = true
+movement_frames = 12
+pulse_frames = 2
+# Advance the round introduction before displaying the paused starting position.
+settle_frames = 180
+max_age = 0.75
+queue_age = 0.1
+# Let connection setup or a slow initial reply finish without cancelling every
+# attempt. Replies older than max_age are still discarded, never played late.
+request_timeout = 3.0
+watchdog = 4.0
+punch = "X"
+kick = "A"
+audio = true
+volume = 0.7

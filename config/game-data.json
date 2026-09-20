@@ -1,0 +1,108 @@
+{
+  "info": {
+    "player_character_id": {
+      "address": 16744923,
+      "type": "|u1"
+    },
+    "opponent_character_id": {
+      "address": 16745563,
+      "type": "|u1"
+    },
+    "round_timer": {
+      "address": 16750378,
+      "type": ">u2"
+    },
+    "player_rounds_won": {
+      "address": 16744922,
+      "type": "|u1"
+    },
+    "opponent_rounds_won": {
+      "address": 16745562,
+      "type": "|u1"
+    },
+    "continuetimer": {
+      "address": 16744917,
+      "type": "|u1"
+    },
+    "enemy_health": {
+      "address": 16745154,
+      "type": ">i2"
+    },
+    "enemy_matches_won": {
+      "address": 16745559,
+      "type": ">u4"
+    },
+    "health": {
+      "address": 16744514,
+      "type": ">i2"
+    },
+    "matches_won": {
+      "address": 16744922,
+      "type": "|u1"
+    },
+    "score": {
+      "address": 16744936,
+      "type": ">d4"
+    },
+    "player_x": {
+      "address": 16744454,
+      "type": ">u2"
+    },
+    "opponent_x": {
+      "address": 16745094,
+      "type": ">u2"
+    },
+    "player_y": {
+      "address": 16744458,
+      "type": ">u2"
+    },
+    "opponent_y": {
+      "address": 16745098,
+      "type": ">u2"
+    },
+    "player_status": {
+      "address": 16744450,
+      "type": ">u2"
+    },
+    "opponent_status": {
+      "address": 16745090,
+      "type": ">u2"
+    },
+    "player_move_timer": {
+      "address": 16744500,
+      "type": "|u1"
+    },
+    "player_projectile_flags": {
+      "address": 16745728,
+      "type": ">u2"
+    },
+    "player_projectile_x": {
+      "address": 16745734,
+      "type": ">u2"
+    },
+    "player_projectile_y": {
+      "address": 16745738,
+      "type": ">u2"
+    },
+    "player_projectile_vx": {
+      "address": 16745788,
+      "type": ">i2"
+    },
+    "opponent_projectile_flags": {
+      "address": 16745856,
+      "type": ">u2"
+    },
+    "opponent_projectile_x": {
+      "address": 16745862,
+      "type": ">u2"
+    },
+    "opponent_projectile_y": {
+      "address": 16745866,
+      "type": ">u2"
+    },
+    "opponent_projectile_vx": {
+      "address": 16745916,
+      "type": ">i2"
+    }
+  }
+}

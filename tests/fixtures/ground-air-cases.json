@@ -1,0 +1,650 @@
+{
+  "description": "Frozen observations and labelled counterfactuals; expected actions are a diagnostic shortlist, not hit guarantees.",
+  "cases": [
+    {
+      "name": "grounded_reaction",
+      "state": {
+        "player": {
+          "character": "Ryu",
+          "health": 176,
+          "full_health": 176,
+          "x": 401,
+          "y": 192,
+          "state": "neutral_or_walking",
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": 0.0,
+          "vy_per_frame": 0.0,
+          "ground_action_ready": true,
+          "fireball_recovery_frames": null,
+          "air_attack_ready_estimate": false
+        },
+        "opponent": {
+          "character": "Guile",
+          "health": 80,
+          "full_health": 176,
+          "x": 443,
+          "y": 192,
+          "state": "hit_or_block_reaction",
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": 0.33,
+          "vy_per_frame": 0.0,
+          "jump_towards_player": false,
+          "jump_in_distance_after_reply_estimate": null
+        },
+        "decision_delay_frames_estimate": 19,
+        "projectiles": {
+          "player": {
+            "active": false
+          },
+          "opponent": {
+            "active": false,
+            "incoming": false,
+            "distance": null,
+            "frames_to_player_x_estimate": null
+          }
+        },
+        "distance": 42,
+        "controls": {
+          "action": "neutral",
+          "strength": "medium",
+          "input_sequence_active": false
+        },
+        "opponent_side": "right",
+        "recent": {
+          "interval_ms": 484,
+          "distance_change": 25,
+          "player_health_change": 0,
+          "opponent_health_change": 0
+        },
+        "last_attempted_action": "neutral",
+        "spacing": "close",
+        "matchup_advice": "Block Sonic Booms and gain ground between them. An early jump attack can enter over a projectile, but repeated jumps let Guile intercept. Use close attacks once in reach."
+      },
+      "expected_actions": [
+        "sweep",
+        "punch",
+        "crouching_punch",
+        "crouching_kick",
+        "kick",
+        "heavy_punch",
+        "crouch_kick_fireball",
+        "hurricane_kick"
+      ],
+      "source": {
+        "kind": "native_observation",
+        "run": "20260918T201533Z-bea939d1",
+        "request_id": 19
+      }
+    },
+    {
+      "name": "airborne_attack_recovering",
+      "state": {
+        "player": {
+          "character": "Ryu",
+          "health": 69,
+          "full_health": 176,
+          "x": 55,
+          "y": 175,
+          "state": "hit_or_block_reaction",
+          "above_ground": true,
+          "jumping": false,
+          "vx_per_frame": 0.0,
+          "vy_per_frame": 0.33,
+          "ground_action_ready": false,
+          "fireball_recovery_frames": null,
+          "air_attack_ready_estimate": false
+        },
+        "opponent": {
+          "character": "Ken",
+          "health": 176,
+          "full_health": 176,
+          "x": 69,
+          "y": 97,
+          "state": "attack_motion",
+          "above_ground": true,
+          "jumping": false,
+          "vx_per_frame": -0.67,
+          "vy_per_frame": -2.5,
+          "jump_towards_player": false,
+          "jump_in_distance_after_reply_estimate": null
+        },
+        "decision_delay_frames_estimate": 21,
+        "projectiles": {
+          "player": {
+            "active": false
+          },
+          "opponent": {
+            "active": false,
+            "incoming": false,
+            "distance": null,
+            "frames_to_player_x_estimate": null
+          }
+        },
+        "distance": 14,
+        "controls": {
+          "action": "crouching_block",
+          "strength": "medium",
+          "input_sequence_active": false
+        },
+        "opponent_side": "right",
+        "recent": {
+          "interval_ms": 485,
+          "distance_change": -21,
+          "player_health_change": 0,
+          "opponent_health_change": 0
+        },
+        "last_attempted_action": "crouching_block",
+        "spacing": "close",
+        "matchup_advice": "Ken can intercept predictable jumps with uppercuts. Mix grounded approaches with jump attacks when the situation supports them; use close pressure once in reach. His identity alone is not evidence of an incoming uppercut."
+      },
+      "expected_actions": [
+        "neutral"
+      ],
+      "source": {
+        "kind": "native_observation",
+        "run": "20260918T201533Z-bea939d1",
+        "request_id": 314
+      },
+      "expectation_note": "Ryu is himself airborne in a reaction and cannot air-block or attack. Waiting is appropriate."
+    },
+    {
+      "name": "airborne_reaction",
+      "state": {
+        "player": {
+          "character": "Ryu",
+          "health": 66,
+          "full_health": 176,
+          "x": 306,
+          "y": 192,
+          "state": "neutral_or_walking",
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": 0.67,
+          "vy_per_frame": 0.0,
+          "ground_action_ready": true,
+          "fireball_recovery_frames": null,
+          "air_attack_ready_estimate": false
+        },
+        "opponent": {
+          "character": "Ken",
+          "health": 1,
+          "full_health": 176,
+          "x": 288,
+          "y": 129,
+          "state": "hit_or_block_reaction",
+          "above_ground": true,
+          "jumping": false,
+          "vx_per_frame": -1.83,
+          "vy_per_frame": 4.83,
+          "jump_towards_player": false,
+          "jump_in_distance_after_reply_estimate": null
+        },
+        "decision_delay_frames_estimate": 18,
+        "projectiles": {
+          "player": {
+            "active": false
+          },
+          "opponent": {
+            "active": false,
+            "incoming": false,
+            "distance": null,
+            "frames_to_player_x_estimate": null
+          }
+        },
+        "distance": 18,
+        "controls": {
+          "action": "neutral",
+          "strength": "medium",
+          "input_sequence_active": false
+        },
+        "opponent_side": "left",
+        "recent": {
+          "interval_ms": 468,
+          "distance_change": 5,
+          "player_health_change": 0,
+          "opponent_health_change": 0
+        },
+        "last_attempted_action": "neutral",
+        "spacing": "close",
+        "matchup_advice": "Ken can intercept predictable jumps with uppercuts. Mix grounded approaches with jump attacks when the situation supports them; use close pressure once in reach. His identity alone is not evidence of an incoming uppercut."
+      },
+      "expected_actions": [
+        "neutral",
+        "retreat",
+        "approach",
+        "dragon_punch",
+        "punch",
+        "heavy_punch",
+        "kick"
+      ],
+      "source": {
+        "kind": "native_observation",
+        "run": "20260918T201533Z-bea939d1",
+        "request_id": 438
+      }
+    },
+    {
+      "name": "airborne_attack_ready",
+      "state": {
+        "player": {
+          "character": "Ryu",
+          "health": 11,
+          "full_health": 176,
+          "x": 55,
+          "y": 192,
+          "state": "neutral_or_walking",
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": 0.0,
+          "vy_per_frame": 0.0,
+          "ground_action_ready": true,
+          "fireball_recovery_frames": null,
+          "air_attack_ready_estimate": false
+        },
+        "opponent": {
+          "character": "Ken",
+          "health": 1,
+          "full_health": 176,
+          "x": 55,
+          "y": 113,
+          "state": "attack_motion",
+          "above_ground": true,
+          "jumping": false,
+          "vx_per_frame": 0.0,
+          "vy_per_frame": 2.5,
+          "jump_towards_player": false,
+          "jump_in_distance_after_reply_estimate": null
+        },
+        "decision_delay_frames_estimate": 17,
+        "projectiles": {
+          "player": {
+            "active": false
+          },
+          "opponent": {
+            "active": false,
+            "incoming": false,
+            "distance": null,
+            "frames_to_player_x_estimate": null
+          }
+        },
+        "distance": 0,
+        "controls": {
+          "action": "neutral",
+          "strength": "medium",
+          "input_sequence_active": false
+        },
+        "opponent_side": "unknown",
+        "recent": {
+          "interval_ms": 485,
+          "distance_change": -19,
+          "player_health_change": 0,
+          "opponent_health_change": 0
+        },
+        "last_attempted_action": "crouching_block",
+        "spacing": "close",
+        "matchup_advice": "Ken can intercept predictable jumps with uppercuts. Mix grounded approaches with jump attacks when the situation supports them; use close pressure once in reach. His identity alone is not evidence of an incoming uppercut."
+      },
+      "expected_actions": [
+        "retreat",
+        "dragon_punch"
+      ],
+      "source": {
+        "kind": "native_observation",
+        "run": "20260918T201533Z-bea939d1",
+        "request_id": 462
+      }
+    },
+    {
+      "name": "close_guard_throw",
+      "state": {
+        "player": {
+          "character": "Ryu",
+          "health": 176,
+          "full_health": 176,
+          "x": 302,
+          "y": 192,
+          "state": "neutral_or_walking",
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": 1.83,
+          "vy_per_frame": 0.0,
+          "ground_action_ready": true,
+          "fireball_recovery_frames": null,
+          "air_attack_ready_estimate": false
+        },
+        "opponent": {
+          "character": "Guile",
+          "health": 176,
+          "full_health": 176,
+          "x": 322,
+          "y": 192,
+          "state": "guard_posture",
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": 0.0,
+          "vy_per_frame": 0.0,
+          "jump_towards_player": false,
+          "jump_in_distance_after_reply_estimate": null
+        },
+        "decision_delay_frames_estimate": 21,
+        "projectiles": {
+          "player": {
+            "active": false
+          },
+          "opponent": {
+            "active": false,
+            "incoming": false,
+            "distance": null,
+            "frames_to_player_x_estimate": null
+          }
+        },
+        "distance": 20,
+        "controls": {
+          "action": "approach",
+          "strength": "light",
+          "input_sequence_active": false
+        },
+        "opponent_side": "right",
+        "recent": {
+          "interval_ms": 500,
+          "distance_change": -52,
+          "player_health_change": 0,
+          "opponent_health_change": 0
+        },
+        "last_attempted_action": "approach",
+        "spacing": "close",
+        "matchup_advice": "Block Sonic Booms and advance between them; avoid jumping at a waiting Guile. Punish a missed Flash Kick if close enough."
+      },
+      "expected_actions": [
+        "throw_forward",
+        "throw_back"
+      ],
+      "source": {
+        "kind": "counterfactual",
+        "base": "close_grounded"
+      }
+    },
+    {
+      "name": "incoming_sonic_boom",
+      "state": {
+        "player": {
+          "character": "Ryu",
+          "health": 132,
+          "full_health": 176,
+          "x": 125,
+          "y": 192,
+          "state": "neutral_or_walking",
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": 0.0,
+          "vy_per_frame": 0.0,
+          "ground_action_ready": true,
+          "fireball_recovery_frames": null,
+          "air_attack_ready_estimate": false
+        },
+        "opponent": {
+          "character": "Guile",
+          "health": 176,
+          "full_health": 176,
+          "x": 264,
+          "y": 192,
+          "state": "attack_motion",
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": 0.0,
+          "vy_per_frame": 0.0,
+          "jump_towards_player": false,
+          "jump_in_distance_after_reply_estimate": null
+        },
+        "decision_delay_frames_estimate": 21,
+        "projectiles": {
+          "player": {
+            "active": false
+          },
+          "opponent": {
+            "active": true,
+            "x": 225,
+            "y": 150,
+            "vx_per_frame": -2.898,
+            "incoming": true,
+            "distance": 100,
+            "frames_to_player_x_estimate": 34.5
+          }
+        },
+        "distance": 139,
+        "controls": {
+          "action": "neutral",
+          "strength": "light",
+          "input_sequence_active": false
+        },
+        "opponent_side": "right",
+        "recent": {
+          "interval_ms": 500,
+          "distance_change": 29,
+          "player_health_change": 0,
+          "opponent_health_change": 0
+        },
+        "last_attempted_action": null,
+        "spacing": "separated",
+        "matchup_advice": "Block Sonic Booms and advance between them; avoid jumping at a waiting Guile. Punish a missed Flash Kick if close enough."
+      },
+      "expected_actions": [
+        "crouching_block",
+        "retreat"
+      ],
+      "source": {
+        "trial": "idle",
+        "frame": 590,
+        "kind": "native_observation"
+      }
+    },
+    {
+      "name": "fireball_recovery",
+      "state": {
+        "player": {
+          "character": "Ryu",
+          "health": 176,
+          "full_health": 176,
+          "x": 205,
+          "y": 192,
+          "state": "special_motion",
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": 0.0,
+          "vy_per_frame": 0.0,
+          "ground_action_ready": false,
+          "fireball_recovery_frames": 40,
+          "air_attack_ready_estimate": false
+        },
+        "opponent": {
+          "character": "Guile",
+          "health": 176,
+          "full_health": 176,
+          "x": 346,
+          "y": 192,
+          "state": "neutral_or_walking",
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": 0.0,
+          "vy_per_frame": 0.0,
+          "jump_towards_player": false,
+          "jump_in_distance_after_reply_estimate": null
+        },
+        "decision_delay_frames_estimate": 21,
+        "projectiles": {
+          "player": {
+            "active": true,
+            "x": 253,
+            "y": 144,
+            "vx_per_frame": 1.738
+          },
+          "opponent": {
+            "active": false,
+            "incoming": false,
+            "distance": null,
+            "frames_to_player_x_estimate": null
+          }
+        },
+        "distance": 141,
+        "controls": {
+          "action": "neutral",
+          "strength": "light",
+          "input_sequence_active": false
+        },
+        "opponent_side": "right",
+        "recent": {
+          "interval_ms": 283,
+          "distance_change": 0,
+          "player_health_change": 0,
+          "opponent_health_change": 0
+        },
+        "last_attempted_action": "fireball",
+        "spacing": "separated",
+        "matchup_advice": "Block Sonic Booms and advance between them; avoid jumping at a waiting Guile. Punish a missed Flash Kick if close enough."
+      },
+      "expected_actions": [
+        "neutral"
+      ],
+      "source": {
+        "trial": "fireball",
+        "frame": 16,
+        "kind": "native_observation"
+      }
+    },
+    {
+      "name": "unknown_readiness",
+      "state": {
+        "player": {
+          "character": "Ryu",
+          "health": 176,
+          "full_health": 176,
+          "x": 205,
+          "y": 192,
+          "state": "unknown",
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": null,
+          "vy_per_frame": null,
+          "ground_action_ready": null,
+          "fireball_recovery_frames": null,
+          "air_attack_ready_estimate": false
+        },
+        "opponent": {
+          "character": "Guile",
+          "health": 176,
+          "full_health": 176,
+          "x": 346,
+          "y": 192,
+          "state": "neutral_or_walking",
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": null,
+          "vy_per_frame": null,
+          "jump_towards_player": false,
+          "jump_in_distance_after_reply_estimate": null
+        },
+        "decision_delay_frames_estimate": 21,
+        "projectiles": {
+          "player": {
+            "active": false
+          },
+          "opponent": {
+            "active": false,
+            "incoming": false,
+            "distance": null,
+            "frames_to_player_x_estimate": null
+          }
+        },
+        "distance": 141,
+        "controls": {
+          "action": "neutral",
+          "input_sequence_active": false
+        },
+        "opponent_side": "right",
+        "recent": null,
+        "last_attempted_action": null,
+        "spacing": "separated",
+        "matchup_advice": "Block Sonic Booms and advance between them; avoid jumping at a waiting Guile. Punish a missed Flash Kick if close enough."
+      },
+      "expected_actions": [
+        "neutral"
+      ],
+      "source": {
+        "kind": "counterfactual",
+        "base": "far_grounded"
+      }
+    },
+    {
+      "name": "airborne_attack_grounded_recovering",
+      "state": {
+        "player": {
+          "character": "Ryu",
+          "health": 69,
+          "full_health": 176,
+          "x": 55,
+          "y": 192,
+          "state": "hit_or_block_reaction",
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": 0.0,
+          "vy_per_frame": 0,
+          "ground_action_ready": false,
+          "fireball_recovery_frames": null,
+          "air_attack_ready_estimate": false
+        },
+        "opponent": {
+          "character": "Ken",
+          "health": 176,
+          "full_health": 176,
+          "x": 69,
+          "y": 97,
+          "state": "attack_motion",
+          "above_ground": true,
+          "jumping": false,
+          "vx_per_frame": -0.67,
+          "vy_per_frame": -2.5,
+          "jump_towards_player": false,
+          "jump_in_distance_after_reply_estimate": null
+        },
+        "decision_delay_frames_estimate": 21,
+        "projectiles": {
+          "player": {
+            "active": false
+          },
+          "opponent": {
+            "active": false,
+            "incoming": false,
+            "distance": null,
+            "frames_to_player_x_estimate": null
+          }
+        },
+        "distance": 14,
+        "controls": {
+          "action": "crouching_block",
+          "strength": "medium",
+          "input_sequence_active": false
+        },
+        "opponent_side": "right",
+        "recent": {
+          "interval_ms": 485,
+          "distance_change": -21,
+          "player_health_change": 0,
+          "opponent_health_change": 0
+        },
+        "last_attempted_action": "crouching_block",
+        "spacing": "close",
+        "matchup_advice": "Ken can intercept predictable jumps with uppercuts. Mix grounded approaches with jump attacks when the situation supports them; use close pressure once in reach. His identity alone is not evidence of an incoming uppercut."
+      },
+      "expected_actions": [
+        "retreat"
+      ],
+      "source": {
+        "kind": "synthetic_variant",
+        "based_on_request": 314,
+        "change": "Ryu grounded while recovering"
+      }
+    }
+  ]
+}

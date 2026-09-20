@@ -1,0 +1,94 @@
+/* Video-first presentation; the original dashboard styles remain the base. */
+main { max-width: 1660px; padding-top: 24px; }
+header { height: 66px; position: sticky; top: 0; z-index: 5; background: #0b1116f5; }
+.intro { margin-bottom: 14px; }
+h1 { font-size: clamp(24px, 2.7vw, 33px); }
+.notice { margin: 12px 0; }
+.scoreboard { margin: 16px 0 20px; padding: 18px 24px; }
+.fighter h2 { font-size: 24px; }
+.workspace { grid-template-columns: minmax(0, 1.7fr) minmax(360px, 1fr); align-items: start; gap: 22px; }
+.left-column { min-width: 0; gap: 18px; }
+.right-column {
+  min-width: 0; display: flex; flex-direction: column; gap: 16px;
+  max-height: calc(100vh - 100px); overflow-y: auto; overscroll-behavior-y: contain;
+  scrollbar-width: thin; scrollbar-color: #4a6355 #121b22;
+  position: sticky; top: 84px; padding-right: 8px; padding-bottom: 3px;
+  border-radius: 12px;
+}
+.right-column:focus-visible { outline: 2px solid var(--mint); outline-offset: 4px; }
+.right-column > * { flex-shrink: 0; }
+.right-column .panel { padding: 19px; }
+.rail-heading { display: flex; justify-content: space-between; align-items: center; color: var(--muted); font: 10px ui-monospace, monospace; letter-spacing: 1.4px; padding: 2px 3px; }
+.rail-heading small { letter-spacing: 0; font-size: 10px; }
+.right-column .arena-panel .panel-heading { flex-direction: column; align-items: stretch; gap: 12px; }
+.right-column .tabs { align-self: flex-start; }
+.right-column .arena-stats { grid-template-columns: 1fr 1fr; }
+.right-column .arena-stats > :last-child { grid-column: span 2; }
+.right-column .arena-stats strong { font-size: 13px; }
+.right-column #scene-stamp { line-height: 1.7; }
+.right-column #action { font-size: 28px; }
+.right-column .metrics strong { font-size: 22px; }
+.live-session .timeline { display: none; }
+.video-panel { padding: 20px; background: #111b22; border-color: #3a5142; }
+.video-panel .panel-heading { margin-bottom: 18px; }
+.video-stage {
+  position: relative; width: 100%; aspect-ratio: 4 / 3; overflow: hidden;
+  background: #05090c; border: 1px solid #2c3d44; border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+}
+#game-video { width: 100%; height: 100%; margin: 0; border: 0; border-radius: 0; image-rendering: pixelated; }
+#game-video[hidden], #video-placeholder[hidden] { display: none; }
+.video-stage.stale #game-video { opacity: .45; }
+.video-placeholder { max-width: 360px; padding: 32px; text-align: center; position: absolute; inset: 0; margin: auto; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.screen-mark { font: italic 700 clamp(36px, 5vw, 70px) Georgia, serif; letter-spacing: -5px; color: #52615a; margin-bottom: 18px; }
+.video-placeholder h3 { font-size: 18px; margin: 0 0 8px; }
+.video-placeholder p { font-size: 13px; line-height: 1.7; color: var(--muted); margin: 0; }
+.video-footer { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-top: 15px; }
+.video-footer p { margin: 3px 0; font-size: 11px; }
+.video-footer button { font-size: 12px; }
+#video-status { min-width: 62px; text-align: center; }
+.video-stage:fullscreen { width: 100vw; height: 100vh; background: black; border: 0; border-radius: 0; }
+.video-stage:fullscreen #game-video { width: min(100vw, 133.333vh); height: min(100vh, 75vw); object-fit: fill; }
+.video-exit { display: none; position: absolute; top: 14px; right: 14px; z-index: 2; background: #111b22e8; }
+.video-stage:fullscreen .video-exit { display: block; }
+.controller-panel { padding: 20px; }
+.controller-panel h2 { font-size: 18px; }
+.controller-panel .gamepad { margin: 20px 0; gap: 50px; }
+.controller-panel .attack-pad { grid-template-columns: repeat(3, 62px); }
+.controller-panel .attack-pad span { height: 49px; }
+.controller-panel .footnote { margin-top: 12px; }
+.controller-panel #input-caption { min-height: 20px; }
+@media (max-width: 1100px) and (min-width: 901px) {
+  main { padding-inline: 24px; }
+  .workspace { grid-template-columns: minmax(0, 1.4fr) minmax(330px, 1fr); gap: 16px; }
+  .video-panel, .controller-panel { padding: 16px; }
+  .controller-panel .gamepad { gap: 25px; }
+  .controller-panel .attack-pad { grid-template-columns: repeat(3, 50px); }
+}
+@media (max-width: 900px) {
+  .workspace { grid-template-columns: 1fr; }
+  .right-column { position: static; max-height: none; overflow: visible; padding-right: 0; }
+  .rail-heading small { display: none; }
+  .right-column .arena-panel .panel-heading { flex-direction: row; align-items: center; }
+  .right-column .arena-stats { grid-template-columns: 1fr 1fr 1fr; }
+  .right-column .arena-stats > :last-child { grid-column: auto; }
+}
+@media (max-width: 680px) {
+  header { height: auto; gap: 12px; position: static; }
+  main { padding: 20px 16px; }
+  .session-controls { width: 100%; }
+  .session-controls button { flex: 1; }
+  .scoreboard { padding: 16px 12px; }
+  .fighter h2 { font-size: 20px; }
+  .video-panel, .controller-panel { padding: 14px; }
+  .video-placeholder { padding: 20px; }
+  .video-placeholder h3 { font-size: 16px; }
+  .video-placeholder p { font-size: 12px; }
+  .video-footer { align-items: flex-start; }
+  .video-footer button { font-size: 10px; padding: 7px; flex-shrink: 0; }
+  .controller-panel .gamepad { gap: 25px; }
+  .controller-panel .attack-pad { grid-template-columns: repeat(3, 45px); gap: 8px; }
+  .right-column .arena-panel .panel-heading { flex-direction: column; align-items: stretch; }
+  .right-column .arena-stats { grid-template-columns: 1fr 1fr; }
+  .right-column .arena-stats > :last-child { grid-column: span 2; }
+}

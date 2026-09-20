@@ -1,0 +1,5 @@
+# Direct dependencies for the Mac experiment.
+stable-retro==1.0.1
+typesafe-sdk==0.6.0
+python-dotenv==1.2.3
+sounddevice==0.5.6

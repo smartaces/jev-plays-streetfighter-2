@@ -1,0 +1,65 @@
+.venv/
+.uv-cache/
+__pycache__/
+.env
+.env.*
+!.env.example
+roms/
+runs/
+# ROM images can also be dropped outside roms. Do not ignore all *.md:
+# Markdown docs and Genesis ROMs share that extension.
+*.bin
+*.gen
+*.smd
+*.32x
+*.iso
+*.sms
+*.gg
+rom.md
+*Street*Fighter*.md
+*street*fighter*.md
+# Local packages/exports can contain ROMs, logs or credentials.
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.tgz
+credentials.json
+credentials-*.json
+service-account*.json
+# Reference repositories belong beside this project, never in its commits.
+research_desk*/
+jev_vampire_survivors*/
+.DS_Store
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.log
+*.tmp
+*.pem
+*.key
+*.p12
+*.pfx
+*.srm
+*.sav
+*.state
+*.state.gz
+# Keep planning, research and manual rollback material local.
+/*.md
+!/README.md
+!/SETUP.md
+!/RUNNING.md
+/backups/
+/research/
+/config/validation.json
+# Only the report launcher helper is part of the runnable distribution.
+/scripts/*
+!/scripts/decision_report.py
+# Retain the fixtures used by the core regression tests.
+/tests/fixtures/*
+!/tests/fixtures/ground-air-cases.json
+!/tests/fixtures/walking-regression.json
+# Dashboard address/command files are local runtime state.
+/.dashboard-*.json

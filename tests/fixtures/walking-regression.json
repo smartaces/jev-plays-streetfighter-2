@@ -1,0 +1,690 @@
+{
+  "source_run": "20260919T142811Z-776e6ca3",
+  "description": "Unmodified recorded observations. Tests reconstruct only fields needed for coaching; no inferred per-frame history or model replies.",
+  "cases": [
+    {
+      "request_id": 6,
+      "episode": 0,
+      "frame": 210,
+      "observation": {
+        "observation_version": "sf2-controls-v4",
+        "player": {
+          "character": "Ryu",
+          "health": 163,
+          "full_health": 176,
+          "x": 171,
+          "y": 192,
+          "state": "neutral_or_walking",
+          "status_raw": 512,
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": 0.17,
+          "vy_per_frame": 0.0,
+          "ground_action_ready": true,
+          "fireball_recovery_frames": null,
+          "observed_ground_ready": true,
+          "air_attack_ready_estimate": false
+        },
+        "opponent": {
+          "character": "Guile",
+          "health": 176,
+          "full_health": 176,
+          "x": 232,
+          "y": 192,
+          "state": "attack_motion",
+          "status_raw": 522,
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": -1.0,
+          "vy_per_frame": 0.0,
+          "jump_towards_player": false,
+          "jump_in_distance_after_reply_estimate": null
+        },
+        "decision_delay_frames_estimate": 20,
+        "projectiles": {
+          "player": {
+            "active": false,
+            "flags_raw": 0
+          },
+          "opponent": {
+            "active": false,
+            "flags_raw": 0,
+            "incoming": false,
+            "distance": null,
+            "frames_to_player_x_estimate": null
+          }
+        },
+        "distance": 61,
+        "signed_separation": 61,
+        "spacing": "outside_basic_attack_reach",
+        "controls": {
+          "action": "approach",
+          "strength": "light",
+          "input_sequence_active": false,
+          "phase": "holding_input",
+          "frames_remaining_upper_bound": 11
+        },
+        "opponent_side": "right",
+        "recent": {
+          "interval_ms": 484,
+          "distance_change": 8,
+          "player_health_change": 0,
+          "opponent_health_change": 0
+        },
+        "current_action": "approach",
+        "input_frames_remaining": 11,
+        "last_attempted_action": "approach"
+      },
+      "expected_cue": "ground_defence",
+      "previous_action": "approach"
+    },
+    {
+      "request_id": 13,
+      "episode": 0,
+      "frame": 359,
+      "observation": {
+        "observation_version": "sf2-controls-v4",
+        "player": {
+          "character": "Ryu",
+          "health": 132,
+          "full_health": 176,
+          "x": 204,
+          "y": 192,
+          "state": "neutral_or_walking",
+          "status_raw": 512,
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": 0.17,
+          "vy_per_frame": 0.0,
+          "ground_action_ready": true,
+          "fireball_recovery_frames": null,
+          "observed_ground_ready": true,
+          "air_attack_ready_estimate": false
+        },
+        "opponent": {
+          "character": "Guile",
+          "health": 176,
+          "full_health": 176,
+          "x": 275,
+          "y": 192,
+          "state": "attack_motion",
+          "status_raw": 522,
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": -0.67,
+          "vy_per_frame": 0.0,
+          "jump_towards_player": false,
+          "jump_in_distance_after_reply_estimate": null
+        },
+        "decision_delay_frames_estimate": 20,
+        "projectiles": {
+          "player": {
+            "active": false,
+            "flags_raw": 0
+          },
+          "opponent": {
+            "active": false,
+            "flags_raw": 0,
+            "incoming": false,
+            "distance": null,
+            "frames_to_player_x_estimate": null
+          }
+        },
+        "distance": 71,
+        "signed_separation": 71,
+        "spacing": "outside_basic_attack_reach",
+        "controls": {
+          "action": "approach",
+          "strength": "light",
+          "input_sequence_active": false,
+          "phase": "holding_input",
+          "frames_remaining_upper_bound": 11
+        },
+        "opponent_side": "right",
+        "recent": {
+          "interval_ms": 486,
+          "distance_change": -71,
+          "player_health_change": 0,
+          "opponent_health_change": 0
+        },
+        "current_action": "approach",
+        "input_frames_remaining": 11,
+        "last_attempted_action": "approach"
+      },
+      "expected_cue": "ground_defence",
+      "previous_action": "approach"
+    },
+    {
+      "request_id": 75,
+      "episode": 1,
+      "frame": 2528,
+      "observation": {
+        "observation_version": "sf2-controls-v4",
+        "player": {
+          "character": "Ryu",
+          "health": 121,
+          "full_health": 176,
+          "x": 379,
+          "y": 192,
+          "state": "neutral_or_walking",
+          "status_raw": 512,
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": 0.33,
+          "vy_per_frame": 0.0,
+          "ground_action_ready": true,
+          "fireball_recovery_frames": null,
+          "observed_ground_ready": true,
+          "air_attack_ready_estimate": false
+        },
+        "opponent": {
+          "character": "Guile",
+          "health": 169,
+          "full_health": 176,
+          "x": 457,
+          "y": 192,
+          "state": "attack_motion",
+          "status_raw": 522,
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": 0.0,
+          "vy_per_frame": 0.0,
+          "jump_towards_player": false,
+          "jump_in_distance_after_reply_estimate": null
+        },
+        "decision_delay_frames_estimate": 24,
+        "projectiles": {
+          "player": {
+            "active": false,
+            "flags_raw": 0
+          },
+          "opponent": {
+            "active": false,
+            "flags_raw": 0,
+            "incoming": false,
+            "distance": null,
+            "frames_to_player_x_estimate": null
+          }
+        },
+        "distance": 78,
+        "signed_separation": 78,
+        "spacing": "outside_basic_attack_reach",
+        "controls": {
+          "action": "approach",
+          "strength": "light",
+          "input_sequence_active": false,
+          "phase": "holding_input",
+          "frames_remaining_upper_bound": 11
+        },
+        "opponent_side": "right",
+        "recent": {
+          "interval_ms": 486,
+          "distance_change": -26,
+          "player_health_change": 0,
+          "opponent_health_change": 0
+        },
+        "current_action": "approach",
+        "input_frames_remaining": 11,
+        "last_attempted_action": "approach"
+      },
+      "expected_cue": "ground_defence",
+      "previous_action": "approach"
+    },
+    {
+      "request_id": 121,
+      "episode": 2,
+      "frame": 226,
+      "observation": {
+        "observation_version": "sf2-controls-v4",
+        "player": {
+          "character": "Ryu",
+          "health": 169,
+          "full_health": 176,
+          "x": 312,
+          "y": 192,
+          "state": "neutral_or_walking",
+          "status_raw": 512,
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": 0.0,
+          "vy_per_frame": 0.0,
+          "ground_action_ready": true,
+          "fireball_recovery_frames": null,
+          "observed_ground_ready": true,
+          "air_attack_ready_estimate": false
+        },
+        "opponent": {
+          "character": "Guile",
+          "health": 176,
+          "full_health": 176,
+          "x": 366,
+          "y": 192,
+          "state": "attack_motion",
+          "status_raw": 522,
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": -1.0,
+          "vy_per_frame": 0.0,
+          "jump_towards_player": false,
+          "jump_in_distance_after_reply_estimate": null
+        },
+        "decision_delay_frames_estimate": 21,
+        "projectiles": {
+          "player": {
+            "active": false,
+            "flags_raw": 0
+          },
+          "opponent": {
+            "active": false,
+            "flags_raw": 0,
+            "incoming": false,
+            "distance": null,
+            "frames_to_player_x_estimate": null
+          }
+        },
+        "distance": 54,
+        "signed_separation": 54,
+        "spacing": "outside_basic_attack_reach",
+        "controls": {
+          "action": "neutral",
+          "strength": "light",
+          "input_sequence_active": false,
+          "phase": "holding_input",
+          "frames_remaining_upper_bound": 11
+        },
+        "opponent_side": "right",
+        "recent": {
+          "interval_ms": 485,
+          "distance_change": 6,
+          "player_health_change": 0,
+          "opponent_health_change": 0
+        },
+        "current_action": "neutral",
+        "input_frames_remaining": 11,
+        "last_attempted_action": "neutral"
+      },
+      "expected_cue": "ground_defence",
+      "previous_action": "approach"
+    },
+    {
+      "request_id": 123,
+      "episode": 2,
+      "frame": 273,
+      "observation": {
+        "observation_version": "sf2-controls-v4",
+        "player": {
+          "character": "Ryu",
+          "health": 132,
+          "full_health": 176,
+          "x": 304,
+          "y": 192,
+          "state": "neutral_or_walking",
+          "status_raw": 512,
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": 0.0,
+          "vy_per_frame": 0.0,
+          "ground_action_ready": true,
+          "fireball_recovery_frames": null,
+          "observed_ground_ready": true,
+          "air_attack_ready_estimate": false
+        },
+        "opponent": {
+          "character": "Guile",
+          "health": 176,
+          "full_health": 176,
+          "x": 366,
+          "y": 192,
+          "state": "attack_motion",
+          "status_raw": 522,
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": 0.0,
+          "vy_per_frame": 0.0,
+          "jump_towards_player": false,
+          "jump_in_distance_after_reply_estimate": null
+        },
+        "decision_delay_frames_estimate": 22,
+        "projectiles": {
+          "player": {
+            "active": false,
+            "flags_raw": 0
+          },
+          "opponent": {
+            "active": false,
+            "flags_raw": 0,
+            "incoming": false,
+            "distance": null,
+            "frames_to_player_x_estimate": null
+          }
+        },
+        "distance": 62,
+        "signed_separation": 62,
+        "spacing": "outside_basic_attack_reach",
+        "controls": {
+          "action": "neutral",
+          "strength": "light",
+          "input_sequence_active": false,
+          "phase": "holding_input",
+          "frames_remaining_upper_bound": 11
+        },
+        "opponent_side": "right",
+        "recent": {
+          "interval_ms": 484,
+          "distance_change": 6,
+          "player_health_change": -31,
+          "opponent_health_change": 0
+        },
+        "current_action": "neutral",
+        "input_frames_remaining": 11,
+        "last_attempted_action": "neutral"
+      },
+      "expected_cue": "ground_defence",
+      "previous_action": "approach"
+    },
+    {
+      "request_id": 100,
+      "episode": 1,
+      "frame": 3100,
+      "observation": {
+        "observation_version": "sf2-controls-v4",
+        "player": {
+          "character": "Ryu",
+          "health": 22,
+          "full_health": 176,
+          "x": 257,
+          "y": 192,
+          "state": "neutral_or_walking",
+          "status_raw": 512,
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": 0.33,
+          "vy_per_frame": 0.0,
+          "ground_action_ready": true,
+          "fireball_recovery_frames": null,
+          "observed_ground_ready": true,
+          "air_attack_ready_estimate": false
+        },
+        "opponent": {
+          "character": "Guile",
+          "health": 169,
+          "full_health": 176,
+          "x": 358,
+          "y": 192,
+          "state": "neutral_or_walking",
+          "status_raw": 512,
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": 0.0,
+          "vy_per_frame": 0.0,
+          "jump_towards_player": false,
+          "jump_in_distance_after_reply_estimate": null
+        },
+        "decision_delay_frames_estimate": 19,
+        "projectiles": {
+          "player": {
+            "active": false,
+            "flags_raw": 0
+          },
+          "opponent": {
+            "active": false,
+            "flags_raw": 0,
+            "incoming": false,
+            "distance": null,
+            "frames_to_player_x_estimate": null
+          }
+        },
+        "distance": 101,
+        "signed_separation": 101,
+        "spacing": "outside_basic_attack_reach",
+        "controls": {
+          "action": "approach",
+          "strength": "light",
+          "input_sequence_active": false,
+          "phase": "holding_input",
+          "frames_remaining_upper_bound": 11
+        },
+        "opponent_side": "right",
+        "recent": {
+          "interval_ms": 483,
+          "distance_change": -49,
+          "player_health_change": 0,
+          "opponent_health_change": 0
+        },
+        "current_action": "approach",
+        "input_frames_remaining": 11,
+        "last_attempted_action": "approach"
+      },
+      "expected_cue": "attack_options",
+      "previous_action": "approach"
+    },
+    {
+      "request_id": 147,
+      "episode": 2,
+      "frame": 869,
+      "observation": {
+        "observation_version": "sf2-controls-v4",
+        "player": {
+          "character": "Ryu",
+          "health": 88,
+          "full_health": 176,
+          "x": 310,
+          "y": 192,
+          "state": "neutral_or_walking",
+          "status_raw": 512,
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": 0.33,
+          "vy_per_frame": 0.0,
+          "ground_action_ready": true,
+          "fireball_recovery_frames": null,
+          "observed_ground_ready": true,
+          "air_attack_ready_estimate": false
+        },
+        "opponent": {
+          "character": "Guile",
+          "health": 176,
+          "full_health": 176,
+          "x": 359,
+          "y": 192,
+          "state": "neutral_or_walking",
+          "status_raw": 512,
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": 0.0,
+          "vy_per_frame": 0.0,
+          "jump_towards_player": false,
+          "jump_in_distance_after_reply_estimate": null
+        },
+        "decision_delay_frames_estimate": 24,
+        "projectiles": {
+          "player": {
+            "active": false,
+            "flags_raw": 0
+          },
+          "opponent": {
+            "active": false,
+            "flags_raw": 0,
+            "incoming": false,
+            "distance": null,
+            "frames_to_player_x_estimate": null
+          }
+        },
+        "distance": 49,
+        "signed_separation": 49,
+        "spacing": "outside_basic_attack_reach",
+        "controls": {
+          "action": "approach",
+          "strength": "light",
+          "input_sequence_active": false,
+          "phase": "holding_input",
+          "frames_remaining_upper_bound": 11
+        },
+        "opponent_side": "right",
+        "recent": {
+          "interval_ms": 484,
+          "distance_change": -17,
+          "player_health_change": 0,
+          "opponent_health_change": 0
+        },
+        "current_action": "approach",
+        "input_frames_remaining": 11,
+        "last_attempted_action": "approach"
+      },
+      "expected_cue": "poke_opportunity",
+      "previous_action": "approach"
+    },
+    {
+      "request_id": 117,
+      "episode": 2,
+      "frame": 125,
+      "observation": {
+        "observation_version": "sf2-controls-v4",
+        "player": {
+          "character": "Ryu",
+          "health": 176,
+          "full_health": 176,
+          "x": 311,
+          "y": 192,
+          "state": "neutral_or_walking",
+          "status_raw": 512,
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": 0.33,
+          "vy_per_frame": 0.0,
+          "ground_action_ready": true,
+          "fireball_recovery_frames": null,
+          "observed_ground_ready": true,
+          "air_attack_ready_estimate": false
+        },
+        "opponent": {
+          "character": "Guile",
+          "health": 176,
+          "full_health": 176,
+          "x": 350,
+          "y": 192,
+          "state": "neutral_or_walking",
+          "status_raw": 512,
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": 0.0,
+          "vy_per_frame": 0.0,
+          "jump_towards_player": false,
+          "jump_in_distance_after_reply_estimate": null
+        },
+        "decision_delay_frames_estimate": 21,
+        "projectiles": {
+          "player": {
+            "active": false,
+            "flags_raw": 0
+          },
+          "opponent": {
+            "active": false,
+            "flags_raw": 0,
+            "incoming": false,
+            "distance": null,
+            "frames_to_player_x_estimate": null
+          }
+        },
+        "distance": 39,
+        "signed_separation": 39,
+        "spacing": "close",
+        "controls": {
+          "action": "approach",
+          "strength": "medium",
+          "input_sequence_active": false,
+          "phase": "holding_input",
+          "frames_remaining_upper_bound": 11
+        },
+        "opponent_side": "right",
+        "recent": {
+          "interval_ms": 483,
+          "distance_change": -28,
+          "player_health_change": 0,
+          "opponent_health_change": 0
+        },
+        "current_action": "approach",
+        "input_frames_remaining": 11,
+        "last_attempted_action": "approach"
+      },
+      "expected_cue": "poke_opportunity",
+      "previous_action": "punch"
+    },
+    {
+      "request_id": 12,
+      "episode": 0,
+      "frame": 335,
+      "observation": {
+        "observation_version": "sf2-controls-v4",
+        "player": {
+          "character": "Ryu",
+          "health": 132,
+          "full_health": 176,
+          "x": 184,
+          "y": 192,
+          "state": "neutral_or_walking",
+          "status_raw": 512,
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": 0.33,
+          "vy_per_frame": 0.0,
+          "ground_action_ready": true,
+          "fireball_recovery_frames": null,
+          "observed_ground_ready": true,
+          "air_attack_ready_estimate": false
+        },
+        "opponent": {
+          "character": "Guile",
+          "health": 176,
+          "full_health": 176,
+          "x": 314,
+          "y": 192,
+          "state": "neutral_or_walking",
+          "status_raw": 512,
+          "above_ground": false,
+          "jumping": false,
+          "vx_per_frame": -2.0,
+          "vy_per_frame": 0.0,
+          "jump_towards_player": false,
+          "jump_in_distance_after_reply_estimate": null
+        },
+        "decision_delay_frames_estimate": 19,
+        "projectiles": {
+          "player": {
+            "active": false,
+            "flags_raw": 0
+          },
+          "opponent": {
+            "active": false,
+            "flags_raw": 0,
+            "incoming": false,
+            "distance": null,
+            "frames_to_player_x_estimate": null
+          }
+        },
+        "distance": 130,
+        "signed_separation": 130,
+        "spacing": "outside_basic_attack_reach",
+        "controls": {
+          "action": "approach",
+          "strength": "light",
+          "input_sequence_active": false,
+          "phase": "holding_input",
+          "frames_remaining_upper_bound": 11
+        },
+        "opponent_side": "right",
+        "recent": {
+          "interval_ms": 484,
+          "distance_change": -15,
+          "player_health_change": 0,
+          "opponent_health_change": 0
+        },
+        "current_action": "approach",
+        "input_frames_remaining": 11,
+        "last_attempted_action": "approach"
+      },
+      "expected_cue": "attack_options",
+      "previous_action": "approach"
+    }
+  ]
+}
