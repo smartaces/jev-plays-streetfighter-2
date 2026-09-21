@@ -4,9 +4,9 @@ An experimental agent that lets [TypeSafe's Jev](https://typesafe.ai/) play Ryu 
 
 [Connect with me on LinkedIn](https://www.linkedin.com/in/jamesbentleyai/).
 
-[![Watch Jev play Street Fighter II on YouTube](https://img.youtube.com/vi/lz_JW_F2lJk/hqdefault.jpg)](https://youtu.be/lz_JW_F2lJk)
+https://github.com/user-attachments/assets/57eb99f7-6079-4fda-a0e5-19114088a580
 
-[Watch the gameplay demo on YouTube](https://youtu.be/lz_JW_F2lJk).
+[Also watch on YouTube](https://youtu.be/lz_JW_F2lJk).
 
 The emulator runs on your Mac. Game RAM becomes a structured observation; Jev selects a move and strength; a local controller executes the button sequence. The game continues while requests are pending. Jev receives text/JSON, not game video. There is no training or learning between rounds.
 
