@@ -2,6 +2,12 @@
 
 An experimental agent that lets [TypeSafe's Jev](https://typesafe.ai/) play Ryu in **Street Fighter II: Special Champion Edition (USA)** for Genesis / Mega Drive, with a local browser dashboard showing what the model sees and chooses.
 
+[Connect with me on LinkedIn](https://www.linkedin.com/in/jamesbentleyai/).
+
+[![Watch Jev play Street Fighter II on YouTube](https://img.youtube.com/vi/lz_JW_F2lJk/hqdefault.jpg)](https://youtu.be/lz_JW_F2lJk)
+
+[Watch the gameplay demo on YouTube](https://youtu.be/lz_JW_F2lJk).
+
 The emulator runs on your Mac. Game RAM becomes a structured observation; Jev selects a move and strength; a local controller executes the button sequence. The game continues while requests are pending. Jev receives text/JSON, not game video. There is no training or learning between rounds.
 
 This is a gameplay experiment, not an expert Street Fighter bot. Movement, attacks, defence and specials work, but choices and timing can be inconsistent.
